@@ -1,0 +1,25 @@
+### FOR GET ALL DATA
+GET http://localhost:3005/subscribers 
+    ...
+
+### FOR GET DATA BY ID IN DATA TABLE DB
+GET http://localhost:3005/subscribers/61b59afa1a32a561ec63f0e4
+
+### FOR ADD NEW DATA WITH REQ BODY
+POST http://localhost:3005/subscribers
+Content-Type: application/json
+{
+    "name": "Rani",
+    "subscribedToChannel": "GTV"
+}
+
+### FOR DELETED
+DELETE http://localhost:3005/subscribers/61b59afa1a32a561ec63f0e4
+
+
+### FOR UPDATE WITH PARAM
+PATCH  http://localhost:3005/subscribers/61b59afa1a32a561ec63f0e4
+Content-Type: application/json
+{
+    "subscribedToChannel" : "Metro TV"
+}
